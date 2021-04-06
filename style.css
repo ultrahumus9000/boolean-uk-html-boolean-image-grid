@@ -1,0 +1,104 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  --small-color: white;
+  --background: rgb(207, 233, 241);
+  --distance: 20px;
+}
+body {
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+  grid-gap: 20px;
+}
+header,
+footer {
+  background-color: #011535;
+  color: var(--small-color);
+  font-size: 25px;
+  padding: 3px;
+}
+footer {
+  display: grid;
+  place-content: center;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  grid-gap: 20px;
+  place-content: center;
+}
+.card {
+  border: 2px solid grey;
+  border-radius: var(--distance);
+  /* display: grid;
+  grid-template-rows: auto 70px auto; */
+  background-color: var(--small-color);
+  overflow: hidden;
+}
+.box {
+  position: relative;
+}
+.big {
+  width: 100%;
+}
+
+.small {
+  position: absolute;
+  top: var(--distance);
+  right: 20px;
+  border-radius: 50%;
+}
+.icon {
+  text-align: right;
+  padding: 10px;
+}
+.card p {
+  padding: 15px;
+}
+.hero {
+  padding: var(--distance);
+  margin: 20px;
+  display: flex;
+  background-color: var(--background);
+  position: relative;
+}
+.hero img {
+  border: 4px dashed salmon;
+  padding: 10px;
+  cursor: pointer;
+}
+.big-pic:hover {
+  background-color: black;
+}
+
+.pictures {
+  position: relative;
+}
+a img {
+  position: absolute;
+  right: 20px;
+  bottom: 35px;
+  background-color: var(--small-color);
+  border-radius: 50%;
+}
+.hero p {
+  padding: var(--distance);
+  font-size: 30px;
+}
+iframe {
+  margin: 20px;
+  height: 250px;
+  border: 4px dashed salmon;
+  padding: 20px;
+}
+audio {
+  border: 4px dashed salmon;
+  border-radius: 20px;
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+}
