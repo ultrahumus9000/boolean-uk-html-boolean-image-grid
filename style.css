@@ -89,6 +89,12 @@ footer {
 .pictures {
   position: relative;
 }
+.auti {
+  display: none;
+}
+.pictures:hover .auti {
+  display: block;
+}
 a img {
   position: absolute;
   right: 20px;
@@ -111,5 +117,5 @@ audio {
   border-radius: 20px;
   position: absolute;
   right: 100px;
-  bottom: 100px;
+  bottom: 50px;
 }
